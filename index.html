@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="Adaptavist-SmartDraw-for-Confluence-Cloud-Launches-250x250-removebg-preview.png"
+      sizes="250x250"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="en" />
+    <meta charset="UTF-8" />
+    <meta name="page-topic" content="test-website (lorem ipsum)" />
+    <meta name="page-type" content="main-box-website" />
+    <meta name="audience" content="Everyone" />
+    <meta name="author" content="TheUnknownProgrammer">
+    <title>WebSite</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: arial, sans-serif, tahoma;
+      }
+      body {
+        background-color: orange;
+        overflow: hidden;
+      }
+      .main {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 3px 4px 4px #686868;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: auto;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        border: 3px solid gray;
+      }
+      .heading1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 0 auto 25px;
+        color: green;
+        font-weight: 100;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 10px;
+        background-color: azure;
+        box-shadow: 3px 4px 4px gray;
+        text-transform: capitalize;
+        -webkit-text-stroke: 0.15px black;
+      }
+      .main p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 15px;
+      }
+      .img {
+        float: right;
+        border: 4px solid black;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: smokewhite;
+        display: block;
+        transition: 0.4s;
+        cursor: pointer;
+        width: 30%;
+        user-select: none;
+      }
+      .img:hover {
+        box-shadow: 0 0 25px 3px tomato;
+        cursor: pointer;
+      }
+      .se1 h2 {
+        color: #ff7043;
+      }
+      .se1 h2::before {
+        content: "step " counter(step, decimal);
+        counter-increment: step;
+        width: 60px;
+        height: 60px;
+        background-color: #ff5722;
+        border: 5px solid white;
+        float: left;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.4);
+        color: white;
+        line-height: 60px;
+        letter-spacing: 1px;
+        margin-right: 10px;
+        margin-top: -10px;
+      }
+      .steps {
+        counter-reset: step;
+        position: relative;
+      }
+      footer,
+      aside {
+        background-color: gray;
+        color: white;
+        padding: 2.5px;
+        box-shadow: 3px 3px 3px gray;
+        text-align: center;
+        width: 100px;
+        margin: auto;
+        border-radius: 2px;
+        user-select: none;
+      }
+      footer {
+        float: right;
+      }
+      aside {
+        float: left;
+      }
+      .copyright {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: #707070;
+        user-select: none;
+      }
+      .icon-img {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        cursor: pointer;
+        border: 1px solid black;
+        padding: 5.5px;
+        user-select: none;
+      }
+      @media only screen and (max-width: 1600px) {
+        .main {
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          margin: auto;
+          transform: translate(-0%, -0%);
+        }
+        .copyright {
+          position: fixed;
+        }
+        .icon-img {
+          position: fixed;
+        }
+        .img {
+          width: 15%;
+        }
+        body {
+          overflow: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <header>
+        <h1 class="heading1">welcome to my website</h1>
+      </header>
+
+      <section class="se1 steps">
+        <a href="https://www.google.com/" target="_blank"
+          ><img
+            src="https://static.adaptavistassets.com/assets/Blog-Images/Adaptavist-smartdraw-intelligent-automated-enterprise-grade-plans-charts-diagrams/Adaptavist-SmartDraw-for-Confluence-Cloud-Launches-250x250.png"
+            alt="logo"
+            class="img"
+        /></a>
+        <h2>sub heading</h2>
+        <p lang="la">
+          Lorem ipsum dolor sit amet consectetur
+          <abbr title="lorem ipsum">adipisicing</abbr> elit. Maxime mollitia,
+          molestiae quas vel sint commodi repudiandae
+          <a href="#">consequuntur</a> voluptatum laborum numquam blanditiis
+          harum <b>quisquam</b> eius sed odit fugiat iusto fuga praesentium
+          optio, eaque rerum! Provident similique accusantium nemo autem.
+          Veritatis.
+        </p>
+        <h2>sub heading</h2>
+        <p lang="la">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <b>Maxime</b> mollitia, molestiae quas vel sint commodi repudiandae
+          <abbr title="lorem ipsum">consequuntur</abbr> voluptatum laborum
+          numquam <a href="#">blanditiis</a> harum quisquam eius sed odit fugiat
+          iusto fuga praesentium optio, eaque rerum! Provident similique
+          accusantium nemo autem. Veritatis.
+        </p>
+        <h2>sub heading</h2>
+        <p lang="la">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          mollitia, molestiae quas vel sint commodi
+          <abbr title="lorem ipsum">repudiandae</abbr> consequuntur voluptatum
+          laborum numquam blanditiis harum quisquam eius sed odit
+          <a href="#">fugiat</a> iusto fuga praesentium optio, eaque rerum!
+          Provident <b>similique</b> accusantium nemo autem. Veritatis.
+        </p>
+        <h2>sub heading</h2>
+        <p lang="la">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          mollitia, <abbr title="lorem ipsum">molestiae</abbr> quas vel sint
+          commodi repudiandae consequuntur voluptatum <b>laborum</b> numquam
+          blanditiis harum <a href="#">quisquam</a> eius sed odit fugiat iusto
+          fuga praesentium optio, eaque rerum! Provident similique accusantium
+          nemo autem. Veritatis.
+        </p>
+      </section>
+
+      <div style="user-select: none"><br /></div>
+      <footer>footer</footer>
+      <aside>aside</aside>
+    </main>
+
+    <p class="copyright">copyright &copy;</p>
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Wheelchair_symbol.svg/898px-Wheelchair_symbol.svg.png"
+      onclick="ClickIcon()"
+      width="50"
+      alt="disability feature"
+      class="icon-img"
+    />
+
+    <script type="text/javascript" defer="true">
+      const footer = document.querySelector("footer");
+      const aside = document.querySelector("aside");
+      // let style-all-elements = document.getElementById("style-all")
+      const section1 = document.querySelector(".se1");
+      const icon = document.querySelector(".icon-img");
+
+      const rndColor = () =>
+        "rgb(" +
+        Math.floor(Math.random() * 256) +
+        "," +
+        Math.floor(Math.random() * 256) +
+        "," +
+        Math.floor(Math.random() * 256) +
+        ")";
+
+      function appendChange() {
+        const elements = Array.from(arguments);
+
+        if (
+          elements.some(
+            (item) => !item instanceof Element || !item instanceof HTMLElement
+          )
+        )
+          return false;
+
+        elements.forEach((ele) => {
+          var originalColor = getComputedStyle(ele).backgroundColor;
+          ele.addEventListener("click", function () {
+            if (
+              ele.style.backgroundColor == "" ||
+              ele.style.backgroundColor == originalColor
+            ) {
+              ele.style.backgroundColor = rndColor();
+            } else {
+              ele.style.backgroundColor = originalColor;
+            }
+          });
+        });
+      }
+
+      function ClickIcon() {
+        if (section1.style.fontWeight == "800") {
+          section1.style.fontWeight = "100";
+          section1.style.fontSize = "16px";
+          icon.style.backgroundColor = "transparent";
+        } else {
+          section1.style.fontWeight = "800";
+          section1.style.fontSize = "24px";
+          icon.style.backgroundColor = "azure";
+        }
+      }
+
+      appendChange(footer, aside);
+    </script>
+  </body>
+</html>
